@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Accredian Enterprise — Landing Page Clone
 
-## Getting Started
+Live Demo: [your-vercel-url]
+GitHub: [your-repo-url]
 
-First, run the development server:
+## Setup Instructions
+1. Clone the repo: `git clone [repo-url]`
+2. Install dependencies: `npm install`
+3. Run locally: `npm run dev`
+4. Open: http://localhost:3000
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Approach Taken
+- Built with Next.js 15 App Router for modern SSR/SSG support
+- Tailwind CSS v4 for utility-first responsive styling
+- Component-based architecture with 14 reusable section components
+- Client components used only where interactivity required (carousel, modal, accordion)
+- Mock API route at `/api/enquire` for lead capture form submission
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## AI Usage
+- Used Claude and ChatGPT (claude.ai) for component code generation and structure planning with proper context.md files for proper token efficiency.
+- Manually reviewed and adjusted all Tailwind classes for accurate visual matching
+- Manually extracted and integrated real images and content from enterprise.accredian.com
+- Manually tested responsive behavior on mobile/tablet/desktop viewports
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features Implemented
+- ✅ Fully responsive (mobile + desktop)
+- ✅ All 14 landing page sections
+- ✅ Lead capture modal form (EnquireModal)
+- ✅ API route for form submission (`/api/enquire`)
+- ✅ Logo carousel (mobile/tablet, static on desktop)
+- ✅ FAQ accordion with 3 tabs
+- ✅ Testimonial carousel (2-up desktop, 1-up mobile)
+- ✅ Course segmentation carousel (mobile)
+- ✅ Smooth scroll navigation with active link highlighting
+- ✅ Mobile hamburger menu
+- ✅ Dark footer on mobile, light on desktop
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Images Needed (download manually from enterprise.accredian.com)
+Place these in `/public/images/`:
+- `hero-professionals.png`
+- `who-should-join-people.png`
+- `edge-desktop.png`
+- `edge-mobile.png`
+- `course-program-specific.jpg`
+- `course-industry-specific.jpg`
+- `course-topic-specific.jpg`
+- `course-level-specific.jpg`
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Improvements With More Time
+- Add Supabase DB for persistent lead storage
+- Add scroll-triggered animations (Framer Motion)
+- Add loading skeletons for image sections
+- Add form validation with react-hook-form
+- SEO metadata per section
