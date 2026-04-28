@@ -30,7 +30,7 @@ export default function CATFramework() {
           </svg>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-0 relative z-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 relative z-10">
           {[
             {
               title: 'Concept',
@@ -60,7 +60,7 @@ export default function CATFramework() {
               ),
             },
           ].map((item, i) => (
-            <div key={item.title} className={`flex flex-col items-center text-center ${i === 1 ? 'md:mt-12' : ''}`}>
+            <div key={item.title} className="flex flex-col items-center text-center" style={{ marginTop: i === 1 ? '3rem' : '0' }}>
               <div
                 className="w-44 h-44 md:w-52 md:h-52 rounded-full border-2 border-blue-500 bg-white flex flex-col items-center justify-center px-5 shadow-sm"
               >

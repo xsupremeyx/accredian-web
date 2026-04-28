@@ -10,7 +10,7 @@ export default function Hero() {
     <>
       <div className="px-4 sm:px-6 lg:px-8 py-6 bg-white">
         <div
-          className="max-w-7xl mx-auto rounded-2xl overflow-hidden"
+          className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-sm"
           style={{ backgroundColor: '#EFF6FF' }}
         >
           {/* Mobile: image on top, text below */}
@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="md:hidden w-full flex justify-center pt-6 px-4">
               <div className="relative w-full max-w-sm h-64">
                 <Image
-                  src="/images/hero-professionals.png"
+                  src="/images/hero-professionals.webp"
                   alt="Enterprise professionals"
                   fill
                   className="object-contain object-center"
@@ -68,7 +68,7 @@ export default function Hero() {
             <div className="hidden md:flex w-2/5 items-end justify-center pr-4">
               <div className="relative w-full h-80">
                 <Image
-                  src="/images/hero-professionals.png"
+                  src="/images/hero-professionals.webp"
                   alt="Enterprise professionals"
                   fill
                   className="object-contain object-bottom"

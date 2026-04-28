@@ -24,13 +24,18 @@ export default function Partnerships() {
       {/* Desktop: flex row */}
       <div className="hidden lg:flex justify-center items-center gap-12 max-w-5xl mx-auto flex-wrap">
         {logos.map(logo => (
-          <img
-            key={logo.name}
-            src={logo.src}
-            alt={logo.name}
-            className="h-12 object-contain grayscale hover:grayscale-0 transition-all"
-            onError={e => { e.target.style.display = 'none' }}
-          />
+          <div key={logo.name} className="flex items-center justify-center w-28">
+            <img
+              src={logo.src}
+              alt={logo.name}
+              className="h-10 object-contain grayscale hover:grayscale-0 transition-all"
+              onError={e => {
+                e.target.style.display = 'none'
+                e.target.nextSibling.style.display = 'block'
+              }}
+            />
+            <span className="hidden text-gray-500 font-semibold text-sm">{logo.name}</span>
+          </div>
         ))}
       </div>
 
@@ -43,7 +48,10 @@ export default function Partnerships() {
               src={logo.src}
               alt={logo.name}
               className="h-10 object-contain flex-shrink-0"
-              onError={e => { e.target.style.display = 'none' }}
+              onError={e => {
+                e.target.style.display = 'none'
+                e.target.nextSibling.style.display = 'block'
+              }}
             />
           ))}
         </div>

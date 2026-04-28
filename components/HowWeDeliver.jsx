@@ -48,10 +48,10 @@ export default function HowWeDeliver() {
           <div
             key={s.num}
             className="relative bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col items-center text-center"
-            style={{ borderLeft: '4px solid #2563EB' }}
+            style={{ borderLeft: '4px solid #2563EB', paddingLeft: '2rem' }}
           >
             {/* Number badge */}
-            <div className="absolute top-4 left-4 w-7 h-7 rounded-full border border-gray-400 flex items-center justify-center text-xs font-semibold text-gray-600">
+            <div className="absolute top-3 left-3 w-7 h-7 rounded-full border border-gray-300 bg-white flex items-center justify-center text-xs font-semibold text-gray-500">
               {s.num}
             </div>
             {/* Icon circle */}

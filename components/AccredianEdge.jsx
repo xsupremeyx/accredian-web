@@ -13,13 +13,13 @@ export default function AccredianEdge() {
       <div className="max-w-5xl mx-auto">
         {/* Desktop image */}
         <img
-          src="/images/edge-desktop.png"
+          src="/images/edge-desktop.svg"
           alt="Accredian Edge - Strategic Training Overview"
           className="hidden md:block w-full"
         />
         {/* Mobile image */}
         <img
-          src="/images/edge-mobile.png"
+          src="/images/edge-mobile.svg"
           alt="Accredian Edge - Our USPs"
           className="block md:hidden w-full max-w-sm mx-auto"
         />

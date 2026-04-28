@@ -35,8 +35,7 @@ export default function TrackRecord() {
             >
               {stat.badge}
             </div>
-            {/* max-w-[180px] */}
-            <p className="text-gray-700 text-sm font-medium max-w-45">{stat.desc}</p> 
+            <p className="text-gray-700 text-sm font-medium max-w-[180px]">{stat.desc}</p> 
           </div>
         ))}
       </div>

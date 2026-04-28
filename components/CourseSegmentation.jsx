@@ -4,22 +4,22 @@ import Image from 'next/image'
 
 const courses = [
   {
-    img: '/images/course-program-specific.jpg',
+    img: '/images/course-program-specific.webp',
     title: 'Program Specific',
     desc: 'Certificate, Executive, Post Graduate Certificate',
   },
   {
-    img: '/images/course-industry-specific.jpg',
+    img: '/images/course-industry-specific.webp',
     title: 'Industry Specific',
     desc: 'IT, Healthcare, Retail, Finance, Education, Manufacturing',
   },
   {
-    img: '/images/course-topic-specific.jpg',
+    img: '/images/course-topic-specific.webp',
     title: 'Topic Specific',
     desc: 'Machine Learning, Design, Analytics, Cybersecurity, Cloud',
   },
   {
-    img: '/images/course-level-specific.jpg',
+    img: '/images/course-level-specific.webp',
     title: 'Level Specific',
     desc: 'Senior Leadership, Mid-Career Professionals, Freshers',
   },
